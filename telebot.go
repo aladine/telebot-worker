@@ -16,6 +16,11 @@ var (
 
 func main() {
 	var msg, country string
+	flag.Parse()
+	if *token_file == "" {
+		flag.PrintDefaults()
+		os.Exit(1)
+	}
 	token, err := ioutil.ReadFile(*token_file)
 	if err != nil {
 		log.Fatal(err)
