@@ -1,9 +1,10 @@
 package main
 
 import (
+	"flag"
 	"github.com/kr/pretty"
 	"github.com/tucnak/telebot"
-	// "reflect"
+	"io/ioutil"
 	"strings"
 	"time"
 )
