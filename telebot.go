@@ -5,6 +5,7 @@ import (
 	"github.com/kr/pretty"
 	"github.com/tucnak/telebot"
 	"io/ioutil"
+	"log"
 	"strings"
 	"time"
 )
