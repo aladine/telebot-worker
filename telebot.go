@@ -30,11 +30,13 @@ func main() {
 		// pretty.Println(message.Sender)
 		msg = message.Text
 		if msg == "/hi" {
+			count := 1
 			for {
-				pretty.Print("Hello...")
+				pretty.Println(count)
+				count++
 				bot.SendMessage(message.Chat,
 					"Hello, "+message.Sender.FirstName+"!", nil)
-				time.Sleep(2000 * time.Millisecond)
+				time.Sleep(1000 * time.Millisecond)
 			}
 		} else if strings.HasPrefix(msg, "/flag") {
 			//check if flag is empty
